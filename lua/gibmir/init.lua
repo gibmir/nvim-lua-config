@@ -6,4 +6,4 @@ require('gibmir/keys/main')
 
 -- theme setup
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd.colorscheme "catppuccin-macchiato"
