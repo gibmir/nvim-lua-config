@@ -1,8 +1,6 @@
 require('gibmir/base/search')
 require('gibmir/base/editor')
 require('gibmir/base/tabs')
---require('gibmir/plugins/plugins')
---require('gibmir/keys/main')
 require('gibmir/config/lazy')
 
 -- nvim-tree open
