@@ -35,13 +35,12 @@ return {
 							vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
 						end
 					})
-					local lspconfig = require'lspconfig'
-					lspconfig.gopls.setup{}
-					lspconfig.pyright.setup{
+          vim.lsp.config("gopls",{})
+					vim.lsp.config("pyright",{
 						capabilities = require'cmp_nvim_lsp'.default_capabilities()
-					}
+					})
+					vim.lsp.enable({"gopls", "pyright"})
 					-- MAPPINGS
-					local lspconfig = require('lspconfig')
 					-- Global mappings.
 					-- See `:help vim.diagnostic.*` for documentation on any of the below functions
 					vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)

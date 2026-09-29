@@ -8,4 +8,4 @@ vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', {noremap = true
 
 -- theme setup
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd.colorscheme "catppuccin-macchiato"
+vim.cmd.colorscheme "catppuccin-frappe"
