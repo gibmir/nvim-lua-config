@@ -36,10 +36,7 @@ return {
 						end
 					})
           vim.lsp.config("gopls",{})
-					vim.lsp.config("pyright",{
-						capabilities = require'cmp_nvim_lsp'.default_capabilities()
-					})
-					vim.lsp.enable({"gopls", "pyright"})
+					vim.lsp.enable({"gopls"})
 					-- MAPPINGS
 					-- Global mappings.
 					-- See `:help vim.diagnostic.*` for documentation on any of the below functions
